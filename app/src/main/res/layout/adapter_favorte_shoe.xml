@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_adapter_shoe"
+    android:layout_margin="5dp"
+    >
+    <ImageView
+        android:id="@+id/FavShoeImage"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/nike1" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_favorite_on"
+        android:layout_toRightOf="@+id/FavShoeImage"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/imgFavShoe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtNameShoe"
+        android:layout_below="@+id/FavShoeImage"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtNameShoeFav"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMoney"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtNameShoeFav"
+        android:textColor="@color/red"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/txtMoneyShoeFav"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"/>
+</RelativeLayout>

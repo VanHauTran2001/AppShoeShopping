@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TimKiemActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/teal_700"-->
+<!--            app:title="Tìm kiếm sản phẩm"-->
+<!--            app:titleTextColor="@color/white"-->
+<!--            android:id="@+id/toolbarSearch"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/teal_700"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_Search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="9"
+                android:background="@drawable/search_bg"
+                android:drawableLeft="@drawable/ic_seacrch"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Tìm kiếm sản phẩm"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/txtCloseSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:text="Đóng" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/recyler_Search"/>
+    </LinearLayout>
+</layout>

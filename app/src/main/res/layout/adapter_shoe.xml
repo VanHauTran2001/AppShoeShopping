@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_adapter_shoe"
+    android:layout_margin="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgShoe"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/nike1" />
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_toRightOf="@id/imgShoe"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_favorite_off"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/imgFavoriteShoe"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtNameShoe"
+        android:layout_below="@id/imgShoe"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtNameShoe"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txtdong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNameShoe"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="3dp"
+        android:text="@string/txtd"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMoney"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtNameShoe"
+        android:layout_toRightOf="@id/txtdong"
+        android:textColor="@color/red"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/txtMoneyShoe"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"/>
+</RelativeLayout>

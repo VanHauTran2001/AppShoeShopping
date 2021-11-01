@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">AppProjectCuoiKhoa</string>
+    -------------ActivityMain-------------
+    <string name="user">User</string>
+    <string name="Password">Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="txtForgotPassword">Forgot Password ?</string>
+    <string name="Remember">Remember me</string>
+    <string name="Signup">Signup ?</string>
+
+    -----------SignupActivity------------
+    <string name="txtSignup">Signup</string>
+    <string name="edtConfirmPass">Confirm Password</string>
+    <string name="edtEmail">Email</string>
+    <string name="edtPhone">Phone Number</string>
+    <string name="edtName">Name</string>
+    <string name="edtAddress">Address</string>
+    <string name="btnOK">OK</string>
+    <string name="btnCancel">Cancel</string>
+
+    -----------MenuNavication-------------
+    <string name="naviHome">Trang chủ</string>
+    <string name="naviYeuThich">Yêu thích</string>
+    <string name="naviThongbao">Thông báo</string>
+    <string name="naviTinnhan">Tin nhắn</string>
+    <string name="naviLocal">Địa chỉ cửa hàng</string>
+    <string name="naviTaiKhoan">Tài Khoản</string>
+    <string name="naviAccount">Account</string>
+    <string name="naviPassword">Đổi mật khẩu</string>
+    <string name="navi_Dramer_Open">Navigation Dramer Open</string>
+    <string name="navi_Dramer_Close">Navigation Dramer Close</string>
+    <string name="naviDangXuat">Đăng xuất</string>
+    <string name="map_api_key">AIzaSyC-pR8sxbTqges3Ivgv5AYUTXU4XWccQrk</string>
+
+    -----------FragmentHome-----------
+    <string name="txtHi">Hi</string>
+    <string name="txtShoeShop">Shoe Shop</string>
+    <string name="edtSearch">Search</string>
+    <string name="txtCategories">Categories</string>
+    <string name="txtShoe">Shoe</string>
+    <string name="txtSale">Sale</string>
+    -----------AdapterShoe----------------
+    <string name="txtNameShoe">Giày Nike</string>
+    <string name="txtd">đ</string>
+    <string name="txtMoney">250.000</string>
+    <string name="txtMoneyBanDau">450.000</string>
+    <string name="txtdBanDau">đ</string>
+    ----------AdapterNike----------------
+    <string name="txtNike">Nike</string>
+    ----------ActivityChiTietSanPham------------
+    <string name="txtTitle">Chi Tiết Sản Phẩm</string>
+    <string name="txtNameChiTiet">Nike Air</string>
+    <string name="txtdChiTiet">đ</string>
+    <string name="txtMoneyChiTiet">250.000</string>
+    <string name="txtMoTaChiTiet">Giày mẫu mới , thiết kế tinh tế , trẻ trung, các đường tỉ mỉ , chi tiết , chắc chắn . Gót giày làm từ chất liệu elastane mềm mại cho độ ôm thoải mái hơn.</string>
+    <string name="txtMade">Made in Viet Nam</string>
+    <string name="txtSize">Kích thước :</string>
+    <string name="txtSoLuong">Số Lượng</string>
+    <string name="txtAdd">Add to Card</string>
+    --------------ActivityGioHang-----------------
+    <string name="txtTileGioHang">Giỏ hàng</string>
+    <string name="txtTongtien">Tổng tiền :</string>
+    <string name="txtVAT">VAT(10%) :</string>
+    <string name="txtTotal">Tổng tiền thanh toán :</string>
+    <string name="txtThanhToan">Thanh toán</string>
+    <string name="txtTieptucmua">Tiếp tục mua hàng</string>
+    <string name="txtSizeGioHang">Size :</string>
+    <string name="txtDelete">Delete</string>
+</resources>

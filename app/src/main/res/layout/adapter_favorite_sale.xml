@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_adapter_shoe"
+    android:layout_margin="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/FavSaleImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/nike1" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        android:id="@+id/imgLogoFavSale"
+        android:background="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="5dp"/>
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_toRightOf="@+id/FavSaleImage"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_favorite_on"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/imgFavSale"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtNameShoe"
+        android:layout_below="@+id/FavSaleImage"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtNameSaleFav"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMoneyBanDau"
+        android:id="@+id/txtMoneyFavSaleBD"
+        android:layout_below="@+id/txtNameSaleFav"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/strike_through"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMoney"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtMoneyFavSaleBD"
+        android:textColor="@color/red"
+        android:id="@+id/txtMoneyFavSale"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"/>
+</RelativeLayout>

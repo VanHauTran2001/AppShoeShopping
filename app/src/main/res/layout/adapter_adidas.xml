@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_adapter_shoe"
+    android:layout_margin="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgAdidas"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/nike1" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_favorite_off"
+        android:layout_toRightOf="@id/imgAdidas"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/imgFavoriteAdidas"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtNameShoe"
+        android:layout_below="@id/imgAdidas"
+        android:layout_marginLeft="10dp"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtNameAdidas"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txtdongAdidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNameAdidas"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/txtd"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtMoney"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtNameAdidas"
+        android:layout_toRightOf="@id/txtdongAdidas"
+        android:textColor="@color/red"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/txtMoneyAdidas"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"/>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "811584060677",
+    "project_id": "appcuoikhoa",
+    "storage_bucket": "appcuoikhoa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811584060677:android:89bd04f7a99fbd9a574b6c",
+        "android_client_info": {
+          "package_name": "com.example.appprojectcuoikhoa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811584060677-vll8n218351idk56ferusdotm3joekq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAivW6zLI1Z2r0eqJ7lfzDpSZSJeZCHz5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811584060677-vll8n218351idk56ferusdotm3joekq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

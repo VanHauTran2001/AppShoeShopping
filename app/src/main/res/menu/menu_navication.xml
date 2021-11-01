@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/naviHome"
+            android:title="@string/naviHome"
+            android:icon="@drawable/ic_home"/>
+        <item android:icon="@drawable/ic_baseline_favorite_24"
+            android:id="@+id/naviYeuThich"
+            android:title="@string/naviYeuThich"/>
+        <item android:title="@string/naviThongbao"
+            android:id="@+id/naviThongBao"
+            android:icon="@drawable/ic_chuong"/>
+        <item android:icon="@drawable/ic_chat"
+            android:id="@+id/naviChat"
+            android:title="@string/naviTinnhan"/>
+        <item android:icon="@drawable/ic_local"
+            android:id="@+id/naviLocal"
+            android:title="@string/naviLocal"/>
+    </group>
+    <item android:title="@string/naviAccount">
+        <menu>
+            <item android:title="@string/naviTaiKhoan"
+                android:id="@+id/naviTaiKhoan"
+                android:icon="@drawable/ic_user"/>
+
+            <item android:icon="@drawable/ic_lock"
+                android:id="@+id/naviPassword"
+                android:title="@string/naviPassword"/>
+            <item android:title="@string/naviDangXuat"
+                android:id="@+id/naviDangXuat"
+                android:icon="@drawable/ic_out"/>
+        </menu>
+    </item>
+</menu>
