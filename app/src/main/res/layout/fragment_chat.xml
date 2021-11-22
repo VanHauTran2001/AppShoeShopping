@@ -1,40 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-   >
-    <RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:id="@+id/activityRoot"
-        android:layout_height="match_parent">
-        <RelativeLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:padding="10dp"
-            android:id="@+id/relative"
-            android:layout_alignParentBottom="true"
-            android:layout_height="wrap_content">
-            <EditText
+            android:layout_height="wrap_content"
+            android:id="@+id/appbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:padding="15dp"
-                android:textColor="@color/black"
-                android:layout_toStartOf="@id/imgSend"
-                android:hint="Message"
-                android:layout_centerVertical="true"
-                android:id="@+id/edtMessage"/>
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="70dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:id="@+id/imgSend"
-                android:src="@drawable/ic_send"
-                android:padding="5dp"/>
-        </RelativeLayout>
-        <androidx.recyclerview.widget.RecyclerView
+                android:padding="10dp"
+                android:id="@+id/relativetoolbar"
+                android:background="@color/hong_nhat">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/imageProfile"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameUser"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imageProfile"
+                    android:textColor="@color/teal_700"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabLayout"
+                android:background="@color/teal_700"
+                app:tabSelectedTextColor="@color/white"
+                app:tabIndicatorColor="@color/white"
+                app:tabTextColor="@color/white"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/recylerMessage"
-            android:layout_margin="10dp"
-            android:layout_above="@id/relative"/>
-    </RelativeLayout>
+            android:id="@+id/viewPager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </LinearLayout>
 </layout>

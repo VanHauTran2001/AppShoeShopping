@@ -31,9 +31,24 @@
                 android:layout_marginTop="10dp"
                 android:textColor="@color/black"
                 android:inputType="text"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
                 android:background="@drawable/custom_edittext"
                 android:hint="@string/edtEmail"
                 android:padding="10dp" />
+            <EditText
+                android:id="@+id/edtUserSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:drawableLeft="@drawable/ic_personn"
+                android:drawablePadding="10dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="User"
+                android:padding="10dp" />
+
 
             <EditText
                 android:id="@+id/edtPasswordSignup"
@@ -42,6 +57,8 @@
                 android:layout_marginTop="10dp"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
                 android:background="@drawable/custom_edittext"
                 android:hint="@string/Password"
                 android:padding="10dp" />
@@ -52,6 +69,8 @@
                 android:layout_marginTop="10dp"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
                 android:background="@drawable/custom_edittext"
                 android:hint="@string/edtConfirmPass"
                 android:padding="10dp" />
@@ -60,6 +79,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="10dp"
                 android:inputType="phone"
                 android:textColor="@color/black"
                 android:background="@drawable/custom_edittext"
@@ -72,6 +93,8 @@
                 android:layout_marginTop="10dp"
                 android:inputType="text"
                 android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:drawablePadding="10dp"
                 android:background="@drawable/custom_edittext"
                 android:hint="@string/edtAddress"
                 android:padding="10dp" />

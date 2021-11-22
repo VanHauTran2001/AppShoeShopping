@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppProjectCuoiKhoa">
-        <activity android:name=".TimKiemActivity"></activity>
+        <activity android:name=".MessageActivity"></activity>
+        <activity android:name=".TimKiemActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -32,6 +33,20 @@
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".HomeActivity" />
+        <service android:name="Notification.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+        </intent-filter>
+        </service>
+        <service android:name="Notification.MyFirebaseService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +54,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

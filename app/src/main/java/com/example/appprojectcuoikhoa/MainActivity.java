@@ -146,7 +146,6 @@ public class MainActivity extends AppCompatActivity {
         }
         window.setLayout(WindowManager.LayoutParams.MATCH_PARENT,WindowManager.LayoutParams.WRAP_CONTENT);
         window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
         WindowManager.LayoutParams windowAtributes = window.getAttributes();
         windowAtributes.gravity = gravity;
         window.setAttributes(windowAtributes);

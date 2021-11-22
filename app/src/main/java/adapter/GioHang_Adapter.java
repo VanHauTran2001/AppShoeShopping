@@ -92,7 +92,6 @@ public class GioHang_Adapter extends RecyclerView.Adapter<GioHang_Adapter.GioHan
                 HomeActivity.gioHangArrayList.get(position).setTongGiaSp(giaMoi);
                 holder.tongGiaGioHnag.setText(new DecimalFormat("###,###,###.000").format(giaMoi)+"đ");
                 EventUtil();
-//                Soluong(soLuongMoi);
                 if (soLuongMoi>=2){
                     holder.minus.setVisibility(View.VISIBLE);
                     holder.plus.setVisibility(View.VISIBLE);
@@ -112,7 +111,6 @@ public class GioHang_Adapter extends RecyclerView.Adapter<GioHang_Adapter.GioHan
                 HomeActivity.gioHangArrayList.get(position).setTongGiaSp(giaMoi);
                 holder.tongGiaGioHnag.setText(new DecimalFormat("###,###,###.000").format(giaMoi)+"đ");
                 EventUtil();
-//                Soluong(soLuongMoi);
                 if (soLuongMoi <2){
                     holder.minus.setVisibility(View.INVISIBLE);
                     holder.plus.setVisibility(View.VISIBLE);

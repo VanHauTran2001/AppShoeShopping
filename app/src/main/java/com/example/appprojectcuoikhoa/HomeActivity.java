@@ -11,6 +11,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -28,9 +29,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import Utils.Utils;
@@ -45,7 +49,6 @@ import model.GioHang;
 
 public class HomeActivity extends AppCompatActivity {
     ActivityHomeBinding binding;
-
     private static final int FRAGMENT_HOME = 1;
     private static final int FRAGMENT_CHAT = 2;
     private static final int FRAGMENT_YEUTHICH = 3;
@@ -113,9 +116,9 @@ public class HomeActivity extends AppCompatActivity {
                         binding.bottomNavigation.getMenu().findItem(R.id.bottomYeuThich).setChecked(true);
                         break;
                     case R.id.naviChat:
-                        openChatFragment();
-                        binding.bottomNavigation.getMenu().findItem(R.id.bottomChat).setChecked(true);
-                        break;
+//                        openChatFragment();
+//                        binding.bottomNavigation.getMenu().findItem(R.id.bottomChat).setChecked(true);
+                       break;
                     case R.id.naviThongBao:
                         openThongBaoFragment();
                         binding.bottomNavigation.getMenu().findItem(R.id.bottomThongBao).setChecked(true);
@@ -129,7 +132,7 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case R.id.naviDangXuat:
                         FirebaseAuth.getInstance().signOut();
-                        startActivity(new Intent(HomeActivity.this,MainActivity.class));
+                        startActivity(new Intent(HomeActivity.this,MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
                         finish();
                         break;
                     case R.id.naviPassword:
@@ -240,6 +243,11 @@ public class HomeActivity extends AppCompatActivity {
             replaceFragment(new ChatFragment());
             mCurrentFragment = FRAGMENT_CHAT;
         }
+//        Fragment fragment = new ChatFragment();
+//        getSupportFragmentManager().beginTransaction()
+//                .replace(R.id.contentFrame,fragment,fragment.getClass().getSimpleName()).addToBackStack(null).commit();
+
+
     }
     private void openThongBaoFragment(){
         if (mCurrentFragment != FRAGMENT_THONGBAO){
@@ -327,6 +335,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         }
     }
+
     public void openGallery(){
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
@@ -334,4 +343,5 @@ public class HomeActivity extends AppCompatActivity {
         activityResultLauncher.launch(Intent.createChooser(intent,"Select Picture"));
 
     }
+
 }
